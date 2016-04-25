@@ -5,9 +5,9 @@ public class Controls extends JPanel
 {
     private JButton hit;
     private JButton stay;
-    private Blackjack control;
+    private BlackJack control;
     
-    public Controls(Blackjack c)
+    public Controls(BlackJack c)
     {
         this.hit = new JButton("Hit");
         this.stay = new JButton("Stay");

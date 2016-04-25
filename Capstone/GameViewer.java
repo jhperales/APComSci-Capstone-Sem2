@@ -1,40 +1,26 @@
+import javax.swing.*;
+import java.util.*;
 
-
-/**
- * Write a description of class GameViewer here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class GameViewer
+public class GameViewer extends JFrame
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int x;
-
-    /**
-     * Default constructor for objects of class GameViewer
-     */
+    private Blackjack game;
+    private Controls control;
+    
     public GameViewer()
     {
-        // initialise instance variables
-        x = 0;
+        super.setTitle("Blackjack");
+        super.setSize(500, 500);
+        this.game = new Blackjack();
+        this.control = new Controls(game);
+        setLayout(new BorderLayout());
+        this.add(game, BorderLayout.CENTER);
+        this.add(control, BorderLayout.SOUTH);
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
-     */
-    public int sampleMethod(int y)
+    
+    public static void main(String[] args)
     {
-        // put your code here
-        return x+y;
+        GameViewer f = new GameViewer();
+        this.setVisible(true);
     }
-
 }
+        
