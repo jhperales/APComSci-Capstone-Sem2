@@ -17,5 +17,9 @@ public class Player
     {
         hand.add(lbl);
     }
+    public void addScore(int s)
+    {
+        this.total_points += s;
+    }
 }
     
