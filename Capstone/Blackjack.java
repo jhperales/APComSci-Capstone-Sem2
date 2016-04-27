@@ -5,6 +5,16 @@ public class BlackJack extends JComponent
 {
     private Player user;
     private Player opponent;
-    private Card deck;
+    private Deck deck;
+    private int turn;
+    
+    public BlackJack()
+    {
+        this.user = new Player();
+        this.opponent = new Player();
+        this.deck = new Deck();
+        this.turn = 1;
+    }
+    
     
 }
