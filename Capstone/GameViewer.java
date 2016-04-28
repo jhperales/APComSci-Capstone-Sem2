@@ -3,14 +3,14 @@ import java.util.*;
 
 public class GameViewer extends JFrame
 {
-    private Blackjack game;
+    private BlackJack game;
     private Controls control;
     
     public GameViewer()
     {
-        super.setTitle("Blackjack");
+        super.setTitle("BlackJack");
         super.setSize(500, 500);
-        this.game = new Blackjack();
+        this.game = new BlackJack();
         this.control = new Controls(game);
         setLayout(new BorderLayout());
         this.add(game, BorderLayout.CENTER);

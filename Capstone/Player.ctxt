@@ -7,4 +7,6 @@ comment2.params=lbl
 comment2.target=void\ addCard(java.lang.String)
 comment3.params=s
 comment3.target=void\ addScore(int)
-numComments=4
+comment4.params=b
+comment4.target=void\ changeState(boolean)
+numComments=5
