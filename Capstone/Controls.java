@@ -27,11 +27,13 @@ public class Controls extends JPanel
         {
             if (event.getActionCommand() == "Hit")
             {
-                control.hit();
+                //control.hit();
+                System.out.println("Hit");
             }
             if (event.getActionCommand() == "Stay")
             {
-                control.stay();
+                //control.stay();
+                System.out.println("Stay");
             }
         }
     }
