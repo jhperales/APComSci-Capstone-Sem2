@@ -10,10 +10,10 @@ public class BlackJack extends JComponent
     private Player opponent;
 
     //Deck of cards
-    private static Deck deck;
+    private Deck deck;
     
     //Current Player
-    private static Player currentPlayer;
+    private Player currentPlayer;
     public BlackJack(Player human, Player computer, Deck cards)
     {
         this.user = human;
@@ -28,7 +28,7 @@ public class BlackJack extends JComponent
      * @param card   The card to be evaluated
      * @return  the value of the card as an int
      */
-    public static int determainValue(String card)
+    public int determainValue(String card)
     {
         if (card.equals("A"))
         {

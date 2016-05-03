@@ -5,7 +5,7 @@ import java.awt.*;
 public class GameViewer extends JFrame
 {
     private BlackJack game;
-    private Controls control;
+    private ControlsPanel control;
     private Player human;
     private Player computer;
     private Deck cards;
@@ -17,7 +17,7 @@ public class GameViewer extends JFrame
         this.human = new Player();
         this.computer = new Player();
         this.game = new BlackJack(this.human, this.computer, this.cards);
-        this.control = new Controls(game);
+        this.control = new ControlsPanel(game);
         setLayout(new BorderLayout());
         this.add(game, BorderLayout.CENTER);
         this.add(control, BorderLayout.SOUTH);

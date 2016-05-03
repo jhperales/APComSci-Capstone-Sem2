@@ -1,13 +1,13 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class Controls extends JPanel
+public class ControlsPanel extends JPanel
 {
     private JButton hit;
     private JButton stay;
     private BlackJack control;
     
-    public Controls(BlackJack c)
+    public ControlsPanel(BlackJack c)
     {
         this.hit = new JButton("Hit");
         this.stay = new JButton("Stay");
