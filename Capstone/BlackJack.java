@@ -11,14 +11,14 @@ public class BlackJack extends JComponent
 
     //Deck of cards
     private Deck deck;
-    
+
     //Current Player
     private Player currentPlayer;
-    public BlackJack(Player human, Player computer, Deck cards)
+    public BlackJack()
     {
-        this.user = human;
-        this.opponent = computer;
-        this.deck = deck;
+        this.user = new Player();
+        this.opponent = new Player();
+        this.deck = new Deck();
         this.currentPlayer = this.user;
     }
 
@@ -82,6 +82,11 @@ public class BlackJack extends JComponent
             return 10;
         }
         return -1;
+    }
+
+    public Player getCurrentPlayer()
+    {
+        return this.currentPlayer;
     }
 
     /**

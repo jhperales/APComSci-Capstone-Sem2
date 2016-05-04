@@ -16,7 +16,7 @@ public class GameViewer extends JFrame
         super.setSize(500, 500);
         this.human = new Player();
         this.computer = new Player();
-        this.game = new BlackJack(this.human, this.computer, this.cards);
+        this.game = new BlackJack();
         this.control = new ControlsPanel(game);
         setLayout(new BorderLayout());
         this.add(game, BorderLayout.CENTER);
