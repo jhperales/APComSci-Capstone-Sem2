@@ -5,6 +5,7 @@ import java.awt.*;
 public class GameViewer extends JFrame
 {
     private BlackJack game;
+    private TextDisplay display;
     private ControlsPanel control;
     private Player human;
     private Player computer;
@@ -14,13 +15,15 @@ public class GameViewer extends JFrame
     {
         super.setTitle("BlackJack");
         super.setSize(500, 500);
+        this.display = new TextDisplay();
         this.human = new Player();
         this.computer = new Player();
         this.game = new BlackJack();
         this.control = new ControlsPanel(game);
         setLayout(new BorderLayout());
-        this.add(game, BorderLayout.CENTER);
-        this.add(control, BorderLayout.SOUTH);
+        this.add(this.game, BorderLayout.CENTER);
+        this.add(this.control, BorderLayout.SOUTH);
+        this.add(this.display, BorderLayout.CENTER);
     }
     
     public static void main(String[] args)

@@ -4,10 +4,12 @@ public class TextDisplay extends JTextArea
 {
     public TextDisplay()
     {
-        super(10, 10);
+        super("Welcome to Blackjack");
+        setLineWrap(true);
     }
-    
+   
     public void changeText(String str)
     {
+        append(str);
     }
 }

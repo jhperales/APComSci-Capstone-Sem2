@@ -14,12 +14,16 @@ public class BlackJack extends JComponent
 
     //Current Player
     private Player currentPlayer;
+    
+    //Text Display
+    private TextDisplay display;
     public BlackJack()
     {
         this.user = new Player();
         this.opponent = new Player();
         this.deck = new Deck();
         this.currentPlayer = this.user;
+        this.display = new TextDisplay();
     }
 
     /**
@@ -113,5 +117,10 @@ public class BlackJack extends JComponent
     {
         p.changeState(false);
         this.currentPlayer = this.opponent;
+    }
+    
+    public void updateText(String str)
+    {
+        this.display.changeText(str);
     }
 }

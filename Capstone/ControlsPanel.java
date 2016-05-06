@@ -28,12 +28,12 @@ public class ControlsPanel extends JPanel
             if (event.getActionCommand() == "Hit")
             {
                 //control.hit();
-                System.out.println("Hit");
+                control.updateText("Hit");
             }
             if (event.getActionCommand() == "Stay")
             {
                 //control.stay();
-                System.out.println("Stay");
+                control.updateText("Stay");
             }
         }
     }
