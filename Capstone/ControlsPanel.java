@@ -6,11 +6,13 @@ public class ControlsPanel extends JPanel
     private JButton hit;
     private JButton stay;
     private BlackJack control;
+    private TextDisplay textControl;
     
     public ControlsPanel(BlackJack c)
     {
         this.hit = new JButton("Hit");
         this.stay = new JButton("Stay");
+        this.textControl = new TextDisplay();
         this.control = c;
         this.add(hit);
         this.add(stay);
@@ -28,12 +30,12 @@ public class ControlsPanel extends JPanel
             if (event.getActionCommand() == "Hit")
             {
                 //control.hit();
-                control.updateText("Hit");
+                textControl.changeText(event.getActionCommand());
             }
             if (event.getActionCommand() == "Stay")
             {
                 //control.stay();
-                control.updateText("Stay");
+                textControl.changeText(event.getActionCommand());
             }
         }
     }

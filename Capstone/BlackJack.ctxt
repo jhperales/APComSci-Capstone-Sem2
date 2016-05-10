@@ -12,6 +12,4 @@ comment3.text=\r\n\ Adds\ card\ to\ Player\ hand\ and\ increments\ score\ depend
 comment4.params=p
 comment4.target=void\ stay(Player)
 comment4.text=\r\n\ Recognizes\ player\ is\ done\ with\ turn\ by\ "staying"\r\n\ \r\n\ @param\ p\ \ \ The\ Player\ object\ t\ perform\ the\ action\ on\r\n\ @param\ b\ \ \ The\ boolean\ value\ to\ set\ the\ players\ state\ in\r\n\ @post\ \ "isDone"\ in\ Player\ object\ will\ be\ true,\ opponent\ will\ take\ turn\r\n
-comment5.params=str
-comment5.target=void\ updateText(java.lang.String)
-numComments=6
+numComments=5

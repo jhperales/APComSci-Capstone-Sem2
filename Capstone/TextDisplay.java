@@ -10,6 +10,6 @@ public class TextDisplay extends JTextArea
    
     public void changeText(String str)
     {
-        append(str);
+        this.append("\n" + str);
     }
 }
