@@ -21,7 +21,6 @@ public class GameViewer extends JFrame
         this.game = new BlackJack();
         this.control = new ControlsPanel(game);
         setLayout(new BorderLayout());
-        this.add(this.game, BorderLayout.CENTER);
         this.add(this.control, BorderLayout.SOUTH);
         this.add(this.display, BorderLayout.CENTER);
     }

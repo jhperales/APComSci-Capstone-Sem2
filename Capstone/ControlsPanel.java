@@ -6,7 +6,6 @@ public class ControlsPanel extends JPanel
     private JButton hit;
     private JButton stay;
     private BlackJack control;
-    private TextDisplay textControl;
     
     public ControlsPanel(BlackJack c)
     {
@@ -27,15 +26,15 @@ public class ControlsPanel extends JPanel
     {
         public void actionPerformed(ActionEvent event)
         {
-            if (event.getActionCommand() == "Hit")
+            if (event.getActionCommand().equals("Hit"))
             {
                 //control.hit();
-                textControl.changeText(event.getActionCommand());
+                System.out.println("Hit");
             }
-            if (event.getActionCommand() == "Stay")
+            if (event.getActionCommand().equals("Stay"))
             {
                 //control.stay();
-                textControl.changeText(event.getActionCommand());
+                System.out.println("Stay");
             }
         }
     }
